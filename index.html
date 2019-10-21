@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>American Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-inverse no-corners">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">American Car Rental</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav navbar-nav navbar-right">
+          <button type="button" data-cart-toggle class="btn-cart btn-default navbar-btn">Carrito <span class="badge" data-cart-item-count>0</span></button>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+  <div data-cart-products class="container" id="productos"> 
+    <div class="row">
+        <div class="card" data-cart-product style="width: 18rem;">
+            <img data-image src="img/createria-_8WDl2zgB_0-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BMW Negro</h5>
+              <p class="card-text">$5.00</p>
+              <a href="#" class="btn btn-primary"data-cart-thumb="img/createria-_8WDl2zgB_0-unsplash(x).jpg"  data-cart-name="BMW Negro" data-cart-price="$5.00" data-cart-add="true" role="button">Agregar a Carrito</a>
+            </div>
+          </div>
+        
+          <div class="card" data-cart-product style="width: 18rem;">
+              <img data-image src="img/patryk-sobczak-TOigkN59Dcg-unsplash.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BMW Gris</h5>
+                <p class="card-text">$10.00</p>
+                <a href="#" class="btn btn-primary"data-cart-thumb="img/patryk-sobczak-TOigkN59Dcg-unsplash(x).jpg"  data-cart-name="BMW Gris" data-cart-price="$10.00" data-cart-add="true" role="button">Agregar a Carrito</a>
+              </div>
+          </div>
+
+          <div class="card" data-cart-product style="width: 18rem;">
+              <img data-image src="img/travis-essinger-3V0FGLkueyA-unsplash.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jeep</h5>
+                <p class="card-text">$15.00</p>
+                <a href="#" class="btn btn-primary"data-cart-thumb="img/travis-essinger-3V0FGLkueyA-unsplash(x).jpg"  data-cart-name="Jeep" data-cart-price="$15.00" data-cart-add="true" role="button">Agregar a Carrito</a>
+              </div>
+          </div>
+
+          <div class="card" data-cart-product style="width: 18rem;">
+              <img data-image src="img/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lamborghini</h5>
+                <p class="card-text">$20.00</p>
+                <a href="#" class="btn btn-primary"data-cart-thumb="img/olav-tvedt-6lSBynPRaAQ-unsplash(x).jpg"  data-cart-name="Lamborghini" data-cart-price="$20.00" data-cart-add="true" role="button">Agregar a Carrito</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div data-cart class="cart panel panel-primary no-corners collapse">
+    <div class="panel-heading no-corners">
+      <h3>Tus Productos Agregados</h3>
+    </div>
+    <!--<div style="overflow-x:auto;">
+    <table>
+        <thead>
+            <tr className="text-left">
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Acción</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr div data-cart-items-container class="panel-body">
+                    <td div data-cart-item class="cart-item row template">
+                        <img data-cart-thumb src="" width="200px" alt="">
+                        
+                    </td>
+                    <td>
+                        <p data-cart-name></p>
+                    </td>
+                    <td>
+                        <p data-cart-price></p>
+                        
+                    </td>
+                    <td><button class="btn btn-warning" data-cart-remove >Eliminar</button></td>
+                </tr>
+                </div>
+              </div>
+        </tbody>
+    </table>
+  </div>-->
+      <div data-cart-items-container class="panel-body">
+      
+        <div data-cart-item class="cart-item row template">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img data-cart-thumb src="" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 data-cart-name></h4>
+            <h5 data-cart-price></h5>
+          <button class="btn btn-warning" data-cart-remove>Eliminar</button>
+        </div>
+        </div>
+    </div>
+  </div> 
+</body>
+</html>
